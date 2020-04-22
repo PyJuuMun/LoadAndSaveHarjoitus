@@ -10,17 +10,21 @@ namespace LoadAndSaveHarjoitus
     {
         public static string filePath = @"C:\Users\Käyttäjä\Desktop\Diginikkari jutut\Visual Studio tehtävät\LoadAndSaveHarjoitus\PeopleList.txt";
 
-        public List<string> lines = File.ReadAllLines(filePath).ToList();
+        MenuOptions menuOptions = new MenuOptions();
 
-        public string XtoString()
+        public string PersontoString(Person person)
         {
-            foreach (string line in lines)
-            {
-                Console.WriteLine(line);
-                Console.ReadLine();
-            }
+            return $"{person.Name},{person.LastName},{person.Income},{person.Employment}";
+        }
 
-            return default;
+        public void WriteLineToFile(List<string> lines)
+        {
+            File.WriteAllLines(filePath, lines);
+        }
+
+        public Person MethodToBeNamed(List<Person> people)
+        {
+            return default; //väliaikainen
         }
     }
 }
