@@ -36,7 +36,10 @@ namespace LoadAndSaveHarjoitus
                         return true;
                     case "2":
                         menuOptions.ViewListPeople();
-                        return true;                    
+                        return true;
+                    case "3":
+                        fileHandler.SavetoFile();
+                        return true;
                     default:
                         return true;
                 }

@@ -12,6 +12,8 @@ namespace LoadAndSaveHarjoitus
 
         MenuOptions menuOptions = new MenuOptions();
 
+        List<string> lines = new List<string>();
+
         public string PersontoString(Person person)
         {
             return $"{person.Name},{person.LastName},{person.Income},{person.Employment}";
@@ -22,7 +24,7 @@ namespace LoadAndSaveHarjoitus
             File.WriteAllLines(filePath, lines);
         }
 
-        public List<string> MethodToBeNamed(List<Person> people)
+        public List<string> ListToString(List<Person> people)
         {
             List<string> people2 = new List<string>();
 
@@ -36,7 +38,8 @@ namespace LoadAndSaveHarjoitus
 
         public void SavetoFile(List<Person> people)
         {
-            
+            lines = ListToString(people);
+            WriteLineToFile(lines);
         }
     }
 }
