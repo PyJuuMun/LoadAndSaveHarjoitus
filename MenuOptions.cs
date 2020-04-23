@@ -8,8 +8,6 @@ namespace LoadAndSaveHarjoitus
     {
         public List<Person> people = new List<Person>();
 
-        
-
         public void PlayGod()
         {
             //Tyhjä person objeckti copypaste pohjana
@@ -40,9 +38,9 @@ namespace LoadAndSaveHarjoitus
             people.Add(person1);
             people.Add(person2);
             people.Add(person3);
-        }
+        }        
 
-        public string InputNew()
+        public Person InputNew()
         {
             Person personX = new Person();
 
@@ -135,8 +133,8 @@ namespace LoadAndSaveHarjoitus
                 Console.ReadLine();
             }
 
-            return default;
-        }
+            return personX;
+        }       
 
         public void ViewListPeople()
         {

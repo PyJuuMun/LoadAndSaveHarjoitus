@@ -22,9 +22,21 @@ namespace LoadAndSaveHarjoitus
             File.WriteAllLines(filePath, lines);
         }
 
-        public Person MethodToBeNamed(List<Person> people)
+        public List<string> MethodToBeNamed(List<Person> people)
         {
-            return default; //väliaikainen
+            List<string> people2 = new List<string>();
+
+            foreach (var person in people)
+            {
+                people2.Add(PersontoString(person));
+            }
+
+            return people2;
+        }
+
+        public void SavetoFile(List<Person> people)
+        {
+            
         }
     }
 }
