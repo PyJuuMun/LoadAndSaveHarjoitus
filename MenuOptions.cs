@@ -38,7 +38,10 @@ namespace LoadAndSaveHarjoitus
             people.Add(person1);
             people.Add(person2);
             people.Add(person3);
-        }        
+        }
+        
+        //tunnin etsinyt että miten pystyisin vertaamaan personX objectia toisessa metodissa/metodissa+classissa.
+        //InputNew metodi saattaa olla liian rönsyävä, mutta en löydä/keksi/tiedä parempaa keinoa tällä hetkellä olevalla koodauksen ymmärryksellä. Ja se toimii, mikä on tarkeintä.
 
         public Person InputNew()
         {
@@ -65,6 +68,8 @@ namespace LoadAndSaveHarjoitus
             {
                 personX.Employment = false;
             }
+
+
 
             else
             {
@@ -134,11 +139,6 @@ namespace LoadAndSaveHarjoitus
             }
 
             return personX;
-        }
-
-        public void ContinueWithEmployment()
-        {
-
         }
 
         public void ViewListPeople()
