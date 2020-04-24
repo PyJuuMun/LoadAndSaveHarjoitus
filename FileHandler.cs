@@ -14,6 +14,11 @@ namespace LoadAndSaveHarjoitus
 
         List<string> lines = new List<string>();
 
+        public FileHandler()
+        {
+
+        }
+
         public string PersontoString(Person person)
         {
             return $"{person.Name},{person.LastName},{person.Income},{person.Employment}";

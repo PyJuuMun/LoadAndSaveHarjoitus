@@ -27,6 +27,7 @@ namespace LoadAndSaveHarjoitus
                 Console.WriteLine("Choose an option:");
                 Console.WriteLine("Choose '1' for inputting new data.");
                 Console.WriteLine("Choose '2' for viewing list.");
+                Console.WriteLine("Choose '3' for saving current list to .txt file. [CAUTION: CURRENTLY INOPERABLE]");
                 Console.Write("\r\nSelect an option:");
 
                 switch (Console.ReadLine())
@@ -38,7 +39,8 @@ namespace LoadAndSaveHarjoitus
                         menuOptions.ViewListPeople();
                         return true;
                     case "3":
-                        fileHandler.SavetoFile(); 
+                        fileHandler.SavetoFile();
+                        //There is no argument given that corresponds to the required formal parameter for 'people' of 'FileHandler.SavetoFile(List<Person>)' virheilmoitusta pukkaa. Ei hajuakaan miten korjataan.
                         return true;
                     default:
                         return true;
