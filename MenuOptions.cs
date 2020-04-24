@@ -134,7 +134,12 @@ namespace LoadAndSaveHarjoitus
             }
 
             return personX;
-        }       
+        }
+
+        public void ContinueWithEmployment()
+        {
+
+        }
 
         public void ViewListPeople()
         {
